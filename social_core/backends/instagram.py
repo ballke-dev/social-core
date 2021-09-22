@@ -42,3 +42,7 @@ class InstagramOAuth2(BaseOAuth2):
 
     def auth_html(self):
         pass
+
+
+class InstagramOAuth2NoRedirect(InstagramOAuth2):
+    REDIRECT_STATE = False
